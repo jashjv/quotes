@@ -1,0 +1,10 @@
+.whole {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+
+.qoute-container {
+    display: flex;
+}
