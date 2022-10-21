@@ -1,7 +1,7 @@
 const actualQoute = document.getElementById('actualquote')
 const author = document.getElementById('quote-author')
 const btnclick=document.getElementById('btn')
-
+const tweetBtn=document.getElementById('tweet')
 
 async function getQuote(){
 
@@ -19,7 +19,16 @@ async function getQuote(){
     }
 }
 
+const Tweet = () => {
+    let quotweet = actualQoute.innerText
+    let auth=author.innerText
+    const tweet = `https://twitter.com/intent/tweet?text=${quotweet}-${auth}`
+    window.open(tweet,'_blank')
+
+}
 
 
-btnclick.addEventListener('click',getQuote)
+btnclick.addEventListener('click', getQuote)
+tweetBtn.addEventListener('click',Tweet)
+
 

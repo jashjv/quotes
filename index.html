@@ -5,32 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>QOUTE'S</title>
+    <script src="https://kit.fontawesome.com/e9bff8a1f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div>
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%" >JASH</text>
+      <text text-anchor="middle" x="52%" y="80%">JASH</text>
+      
+    </symbol>
+  
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
     <div class="whole">
         <div class="qoute-container">
-            <!-- <svg viewBox="0 0 960 300">
-                <symbol id="s-text">
-                  <text text-anchor="middle" x="50%" y="80%" >LEARN</text>
-                  <text text-anchor="middle" x="52%" y="80%">LEARN</text>
-                  
-                </symbol>
-              
-                <g class = "g-ants">
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-              </svg> -->
-            "<span id="actualquote"></span>"
+            <i class="fa-solid fa-quote-left"></i><span id="actualquote"></span>
 
             <h4 id="quote-author"></h4>
-        </div>
-        <button id="btn">click to get new qoute</button>
+        </div> 
+        <div id="bbb">
+        <button id="btn"><i class="fa-solid fa-hashtag">&nbsp;</i>click to get new qoute</button>
+        <button id="tweet"><i class="fa-brands fa-twitter">&nbsp;</i>tweet this qoute</button>
+      </div>
     </div>
+  </div>
     
     <script src="script.js"></script>
 </body>
